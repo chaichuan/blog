@@ -38,3 +38,5 @@ jstack线程：（632是进程ID）
 jmap内存：
 
 	su www -lc "jmap -F -dump:format=b,file=jmap.dat 6214"
+    查看
+    su www -lc "jhat -j -Xmx512m -port 9998 /home/www/jmap.dat"
